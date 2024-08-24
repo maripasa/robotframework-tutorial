@@ -51,7 +51,7 @@ Library  SeleniumLibrary
 
 É, antes de tudo, uma framework de testes, ele junta várias ferramentas de testes automatizados em forma de libraries, unificando-as em uma plataforma de fácil utilização.
 
-O robotframework é muito abstraído, se você alguma vez já se assustou com python por ser uma linguagem que você "só escreve código e ela funciona", robotframework vai te impressionar.
+O [robotframework](https://robotframework.org/) é muito abstraído, se você alguma vez já se assustou com python por ser uma linguagem que você "só escreve código e ela funciona", robotframework vai te impressionar.
 
 Por ser uma library em cima do python que o torna, de algum jeito, ainda mais simples, pode se esperar que não tem foco em eficiência de processamento de código assim como outras linguagens. Você vai ver isso em algumas organizações de projeto, como a que vou explicar aqui.
 
@@ -61,11 +61,43 @@ Ele junta ferramentas como:
 - [selenium](https://www.selenium.dev/)
 - e muitas outras!
 
-## 4. Dicas antes de utilizar o robotframework
+## 4. Preparação para o uso da library robotframework
 
-- É bom ver o crash course também de [python](/tools/python.md) e depois o de [git](/tools/git.md).
+- É bom ver o crash course também de [python](/tools/python.md) e depois o de [git](/tools/git.md). Mas no geral, para iniciar um novo projeto em robotframework, você segue o início básico de todo projeto em python:
 
-- Na área do Vscode, uma extensão muito boa para robotframework é essa:
+Para Linux:
+1. Crie um venv com `python3 -m venv venv`
+2. Acesse o venv com `source venv/bin/activate`
+3. Baixe suas dependências com o pip: `pip install robotframework robotframework-seleniumlibrary`... e outras dependências
+
+Para Windows
+1. Crie um venv com `python3 -m venv venv`
+2. Acesse o venv com `venv/Scripts/activate` (talvez tenha que permitir scripts com o comando `Set-ExecutionPolicy RemoteSigned`, se você se sente inseguro, pode usar também `Set-ExecutionPolicy Restricted` para retornar ao estado mais protetivo do windows)
+3. Baixe suas dependências com o pip: `pip install robotframework robotframework-seleniumlibrary`... e outras dependências
+
+- O Vscode possuí um syntax highlight básico de robotframework, mas para mais compatíbilidade uma extensão muito boa para trabalhar com robotframework é essa:
 ![alt text](/media/image.png)
 
-##
+- Para testes de Front-end, vamos utilizar Selenium como a base para os testes, então precisamos dos Webdrivers para os browsers que vamos testar:
+Já existem videos melhores ensinando a instalar essas dependencias. Recomendo esses:
+- [Selenium com Python #01b - Configurando seu ambiente no Linux](https://youtu.be/XUeu4ZzQNUI?si=N6j4wDU0troRTsXg)
+- [Selenium com Python #01a - Configurando seu ambiente no Windows](https://youtu.be/rVCKZcFHu4A?si=QMCcHNdDhce5rvLB)
+  
+O que você precisa principalmente são as versões de teste do browser e seus WebDrivers, um site bom que ensina a instalar versões de teste do Google Chrome é:
+- [Chrome for Testing: reliable downloads for browser automation](https://developer.chrome.com/blog/chrome-for-testing) (Você pode encontrar os comandos no fundo da página
+
+Depois disso tudo, a documentação do robotframework é sua maior amiga:
+- [Robotframework](https://robotframework.org/)
+- [Builtin (Library Padrão)](https://robotframework.org/robotframework/latest/libraries/BuiltIn.html)
+- [Selenium Library](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+- [Requests Library](https://docs.robotframework.org/docs/different_libraries/requests)
+
+## 5. Introdudução ao ROBOTFRAMEWORK
+Finalmente podemos ir para a parte interessante! Sendo uma library focada em suites para testes, o robotframework é bem direto e enxuto, seu código é dividido dessa seguinte forma:
+![image](https://github.com/user-attachments/assets/0932444e-5ef9-4bda-8004-773203572762)
+
+
+
+[MAIS PARA VIR]
+
+## X. Links Importantes
