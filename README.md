@@ -7,6 +7,7 @@
   - [2. Introdução antes da introdução](#2-introdução-antes-da-introdução)
   - [3. Introdução ao robotframework](#3-introdução-ao-robotframework)
   - [4. Dicas antes de utilizar o robotframework](#4-dicas-antes-de-utilizar-o-robotframework)
+  - [](#)
 <!--te-->
 
 ## 1. Motivação e Apresentação
@@ -64,4 +65,7 @@ Ele junta ferramentas como:
 
 - É bom ver o crash course também de [python](/tools/python.md) e depois o de [git](/tools/git.md).
 
-- 
+- Na área do Vscode, uma extensão muito boa para robotframework é essa:
+![alt text](/media/image.png)
+
+##
